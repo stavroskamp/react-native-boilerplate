@@ -1,5 +1,5 @@
 {
-  "name": "ReactNativeBoilerplate",
+  "name": "react-native-kmb-boilerplate",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
@@ -7,6 +7,7 @@
     "react-native-scripts": "1.13.1",
     "react-native-typescript-transformer": "^1.2.3",
     "react-test-renderer": "16.3.0-alpha.1",
+    "ts-jest": "^22.4.2",
     "typescript": "^2.8.1"
   },
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
@@ -18,9 +19,32 @@
     "test": "jest"
   },
   "jest": {
-    "preset": "jest-expo"
+    "preset": "react-native",
+    "transform": {
+      "^.+\\.jsx?$": "<rootDir>/node_modules/babel-jest",
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ],
+    "globals": {
+      "ts-jest": {
+        "useBabelrc": true
+      }
+    },
+    "modulePaths": [
+      "<rootDir>"
+    ]
   },
   "dependencies": {
+    "@types/react": "^16.1.0",
+    "@types/react-native": "^0.52.22",
     "expo": "^26.0.0",
     "react": "16.3.0-alpha.1",
     "react-native": "0.54.0"
