@@ -1,5 +1,5 @@
 {
-  "name": "react-native-kmb-boilerplate",
+  "name": "ReactNativeBoilerplate",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
@@ -45,8 +45,12 @@
   "dependencies": {
     "@types/react": "^16.1.0",
     "@types/react-native": "^0.52.22",
+    "@types/react-redux": "^5.0.15",
+    "@types/redux": "^3.6.0",
     "expo": "^26.0.0",
     "react": "16.3.0-alpha.1",
-    "react-native": "0.54.0"
+    "react-native": "0.54.0",
+    "react-redux": "^5.0.7",
+    "redux": "^3.7.2"
   }
 }

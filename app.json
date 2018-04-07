@@ -1,4 +1,6 @@
 {
+  "name": "ReactNativeBoilerplate",
+  "displayName": "React Native Boilerplate",
   "expo": {
     "sdkVersion": "26.0.0"
   }
