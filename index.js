@@ -1,14 +1,4 @@
-import React from 'react';
 import { AppRegistry } from 'react-native';
-import { Provider} from 'react-redux';
-import App from './src/App.tsx';
-import configureStore from './src/store/configureStore';
-const store = configureStore();
+import App from './src/App';
 
-const RNRedux = () => (
-    <Provider store={store}>
-        <App />
-    </Provider>
-)
-
-AppRegistry.registerComponent('ReactNativeBoilerplate', () => RNRedux);
+AppRegistry.registerComponent('ReactNativeBoilerplate', () => App);
